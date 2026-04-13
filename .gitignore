@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# env files
+.env
+.env.local
+.env*.local
+.env.vercel
+
+# images & media
+public/*.jpg
+public/*.jpeg
+public/*.png
+!public/tgtg-icon.png
+!public/tgtg-logo.png
+public/flat/
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.vercel
