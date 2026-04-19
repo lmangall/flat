@@ -42,6 +42,7 @@ export default function Explore() {
     { key: 'tgtg', label: 'Too Good To Go', logo: TGTG_ICON },
     { key: 'walks', label: te.categories.walks, emoji: '🌿' },
     { key: 'museums', label: te.categories.museums, emoji: '🏛' },
+    { key: 'local-specialties', label: te.categories['local-specialties'], emoji: '🫓' },
   ]
 
   const filtered = useMemo(

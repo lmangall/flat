@@ -1,4 +1,4 @@
-export type Category = 'coffee' | 'food' | 'walks' | 'museums'
+export type Category = 'coffee' | 'food' | 'walks' | 'museums' | 'local-specialties'
 
 export interface Place {
   id: string
@@ -24,6 +24,7 @@ export const categoryColors: Record<Category, string> = {
   food: '#D4785C',    // sunset
   walks: '#5C8A4D',   // olive green
   museums: '#8B6B9C', // muted plum
+  'local-specialties': '#C4A235', // golden ochre
 }
 
 export const places: Place[] = [
@@ -68,7 +69,7 @@ export const places: Place[] = [
   },
   {
     id: 'pan-bagnat-cheap',
-    category: 'food',
+    category: 'local-specialties',
     name: 'Pan Bagnat (budget-friendly)',
     emoji: '🥖',
     description: {
@@ -81,7 +82,7 @@ export const places: Place[] = [
   },
   {
     id: 'pan-bagnat-sea',
-    category: 'food',
+    category: 'local-specialties',
     name: 'Pan Bagnat by the Sea',
     emoji: '🥖',
     description: {
@@ -127,7 +128,7 @@ export const places: Place[] = [
       en: 'Head towards some of the most beautiful beaches in the area — crystal clear water and stunning scenery. Perfect for a longer afternoon.',
       pl: 'Trasa do jednych z najpiękniejszych plaż w okolicy — krystalicznie czysta woda i cudowna sceneria. Idealne na dłuższe popołudnie.',
     },
-    url: 'https://maps.app.goo.gl/3XLbyN1u9S4wiok18',
+    url: 'https://maps.app.goo.gl/iCM2QCZ3ntX9X5Zp7?g_st=iw',
     lat: 43.5552772,
     lng: 7.1402535,
   },
@@ -265,5 +266,57 @@ export const places: Place[] = [
     url: 'https://www.google.com/maps/search/?api=1&query=Naturalia+2+Rue+Championnet+Antibes',
     lat: 43.5809,
     lng: 7.1231,
+  },
+  {
+    id: 'chamkila',
+    category: 'food',
+    name: 'Chamkila',
+    emoji: '🍽️',
+    description: {
+      en: 'Martyna\'s favourite restaurant. The interior is fully pink, the waiter is one of a kind — bad jokes and lots of charm. Good food, open late, right across Cours Masséna.',
+      pl: 'Ulubiona restauracja Martyny. Wnętrze w całości różowe, kelner jedyny w swoim rodzaju — suche żarty i mnóstwo uroku. Dobre jedzenie, otwarte do późna, naprzeciwko Cours Masséna.',
+    },
+    url: 'https://maps.app.goo.gl/42nqxbz91pBCwBgy6',
+    lat: 43.5809814,
+    lng: 7.1272856,
+  },
+  {
+    id: 'pissaladiere',
+    category: 'local-specialties',
+    name: 'Pissaladière',
+    emoji: '🫓',
+    description: {
+      en: 'Onion, olive and anchovy tart on bread dough. Available in almost any bakery — we linked our favourite.',
+      pl: 'Tarta z cebulą, oliwkami i anchois na cieście chlebowym. Dostępna w prawie każdej piekarni — podlinkowaliśmy naszą ulubioną.',
+    },
+    url: 'https://maps.app.goo.gl/bFtxHXz27uTykWuh8',
+    lat: 43.5808,
+    lng: 7.1272,
+  },
+  {
+    id: 'socca',
+    category: 'local-specialties',
+    name: 'Socca',
+    emoji: '🥞',
+    description: {
+      en: 'A Nice specialty — thin, crispy chickpea pancake. Buy at a bakery or fresh at the market here.',
+      pl: 'Specjalność Nicei — cienki, chrupiący naleśnik z ciecierzycy. Kupicie w piekarni albo świeży na targu w tym miejscu.',
+    },
+    url: '',
+    lat: 43.58053040617932,
+    lng: 7.127462163116938,
+  },
+  {
+    id: 'tourte-aux-blettes',
+    category: 'local-specialties',
+    name: 'Tourte aux Blettes',
+    emoji: '🥧',
+    description: {
+      en: 'Swiss chard tart — savoury or sweet. Available in almost any bakery — we linked our favourite.',
+      pl: 'Tarta z boćwiną — słona albo słodka. Dostępna w prawie każdej piekarni — podlinkowaliśmy naszą ulubioną.',
+    },
+    url: 'https://maps.app.goo.gl/bFtxHXz27uTykWuh8',
+    lat: 43.5808,
+    lng: 7.1272,
   },
 ]
