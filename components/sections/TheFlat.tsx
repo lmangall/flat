@@ -277,6 +277,20 @@ export default function TheFlat() {
 
           <div className="py-6 border-b border-stone/30">
             <div className="flex items-start gap-4">
+              <span className="text-2xl mt-0.5">{tf.oven.emoji}</span>
+              <div>
+                <h3 className="font-display text-xl text-night mb-2 tracking-tight">
+                  {tf.oven.title}
+                </h3>
+                <p className="font-sans text-earth/70 leading-relaxed text-[0.85rem]">
+                  {tf.oven.text}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-6 border-b border-stone/30">
+            <div className="flex items-start gap-4">
               <span className="text-2xl mt-0.5">🏠</span>
               <div>
                 <h3 className="font-display text-xl text-night mb-2 tracking-tight">

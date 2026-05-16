@@ -21,7 +21,7 @@ export default function Araki() {
   const openSun = useCallback(() => setShowSun(true), [])
   const closeSun = useCallback(() => setShowSun(false), [])
 
-  const cards = [ta.stuff, ta.hair, ta.food, ta.walks, ta.night]
+  const cards = [ta.stuff, ta.food, ta.walks, ta.night]
 
   return (
     <section id="araki" className="bg-parchment py-28 px-6 sm:px-8 relative overflow-hidden">

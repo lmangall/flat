@@ -34,12 +34,22 @@ export const translations = {
         emoji: '🛏️',
         text: "Bedsheets, towels, hairdryer, and a fully equipped kitchen are all here (no dishwasher). Bathroom has a bathtub; toilet is separate. Fast internet. No elevator — it's a 4th-floor walkup in a classic old town building. The upper part under the roof has very low ceilings — watch your head (we really mean it). The stairs can be slippery with socks, so be careful going up and down.",
       },
+      oven: {
+        title: 'Oven light',
+        emoji: '💡',
+        text: "Quick heads up: the oven light doesn't switch off on its own. Please remember to turn it off after using the oven so it doesn't stay on.",
+      },
       gallery: {
         title: 'Photos',
         items: [
           { src: `${blob}/flat/flat-from-sky.png`, caption: 'The flat from the sky' },
           { src: `${blob}/flat/side-window-view.jpeg`, caption: 'Side window view' },
           { src: `${blob}/flat/araki-sunbathing.jpeg`, caption: 'Araki taking the sun (not allowed on the seat)' },
+          { src: `${blob}/flat/araki-on-rug.jpg`, caption: 'Araki on the rug' },
+          { src: `${blob}/flat/pink-sofa-and-rug.jpg`, caption: 'Pink sofa and rug' },
+          { src: `${blob}/flat/living-room.jpg`, caption: 'Living room' },
+          { src: `${blob}/flat/yellow-shelves.jpg`, caption: 'Yellow shelves' },
+          { src: `${blob}/flat/wooden-beam-mimosa.jpg`, caption: 'Wooden beam with mimosa' },
           { src: `${blob}/flat/les-remparts.jpeg`, caption: 'Les remparts' },
           { src: `${blob}/flat/room-view.jpeg`, caption: 'Room view' },
           { src: `${blob}/flat/our-door.jpeg`, caption: 'Our door' },
@@ -67,11 +77,6 @@ export const translations = {
         title: 'Walks',
         emoji: '🦮',
         text: "Araki prefers to come with you everywhere, but you can leave him home and explore on your own. He needs at least 2 walks a day.",
-      },
-      hair: {
-        title: 'Fair warning',
-        emoji: '🧹',
-        text: "Araki sheds. A lot. You'll notice it after the first day — just a heads up!",
       },
       night: {
         title: 'At night',
@@ -179,12 +184,22 @@ export const translations = {
         emoji: '🛏️',
         text: 'Pościel, ręczniki, suszarka i w pełni wyposażona kuchnia (bez zmywarki). Łazienka z wanną; toaleta osobno. Szybki internet. Bez windy — 4. piętro w klasycznym budynku starego miasta. Górna część pod dachem ma bardzo niskie sufity — uważaj na głowę (naprawdę bardzo). Schody mogą być śliskie w skarpetkach, więc ostrożnie przy wchodzeniu i schodzeniu.',
       },
+      oven: {
+        title: 'Lampka piekarnika',
+        emoji: '💡',
+        text: 'Mała uwaga: lampka piekarnika nie gaśnie sama. Pamiętajcie wyłączyć ją po użyciu piekarnika, żeby nie świeciła cały czas.',
+      },
       gallery: {
         title: 'Zdjęcia',
         items: [
           { src: `${blob}/flat/flat-from-sky.png`, caption: 'Mieszkanie z góry' },
           { src: `${blob}/flat/side-window-view.jpeg`, caption: 'Widok z bocznego okna' },
           { src: `${blob}/flat/araki-sunbathing.jpeg`, caption: 'Araki na słońcu (nie wolno mu na fotel)' },
+          { src: `${blob}/flat/araki-on-rug.jpg`, caption: 'Araki na dywanie' },
+          { src: `${blob}/flat/pink-sofa-and-rug.jpg`, caption: 'Różowa sofa i dywan' },
+          { src: `${blob}/flat/living-room.jpg`, caption: 'Salon' },
+          { src: `${blob}/flat/yellow-shelves.jpg`, caption: 'Żółte półki' },
+          { src: `${blob}/flat/wooden-beam-mimosa.jpg`, caption: 'Drewniana belka z mimozą' },
           { src: `${blob}/flat/les-remparts.jpeg`, caption: 'Mury obronne' },
           { src: `${blob}/flat/room-view.jpeg`, caption: 'Widok pokoju' },
           { src: `${blob}/flat/our-door.jpeg`, caption: 'Nasze drzwi' },
@@ -212,11 +227,6 @@ export const translations = {
         title: 'Spacery',
         emoji: '🦮',
         text: 'Araki woli chodzić z wami wszędzie, ale możecie go zostawić w domu i zwiedzać na własną rękę. Potrzebuje minimum 2 spacerów dziennie.',
-      },
-      hair: {
-        title: 'Uczciwe ostrzeżenie',
-        emoji: '🧹',
-        text: 'Araki traci dużo sierści. Naprawdę dużo. Zauważycie to po pierwszym dniu — tylko ostrzegamy!',
       },
       night: {
         title: 'W nocy',
