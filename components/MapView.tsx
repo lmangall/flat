@@ -104,7 +104,12 @@ function MapController({
   useEffect(() => {
     if (filter !== prevFilter.current) {
       prevFilter.current = filter
-      const visible = filter === 'all' ? places : places.filter((p) => p.category === filter)
+      const visible =
+        filter === 'all'
+          ? places
+          : filter === 'tgtg'
+            ? places.filter((p) => p.tgtg)
+            : places.filter((p) => p.category === filter)
       if (visible.length > 0) {
         const bounds = L.latLngBounds(visible.map((p) => [p.lat, p.lng]))
         // Always include the flat
@@ -131,7 +136,12 @@ export default function MapView({ filter, activePlace, onMarkerClick }: MapViewP
   const markerRefs = useRef<Record<string, L.Marker>>({})
 
   const filtered = useMemo(
-    () => (filter === 'all' ? places : places.filter((p) => p.category === filter)),
+    () =>
+      filter === 'all'
+        ? places
+        : filter === 'tgtg'
+          ? places.filter((p) => p.tgtg)
+          : places.filter((p) => p.category === filter),
     [filter]
   )
 
