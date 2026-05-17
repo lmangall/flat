@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useLang } from '@/components/LanguageProvider'
 import { translations } from '@/lib/translations'
@@ -60,6 +61,52 @@ export default function Araki() {
         <p className="font-sans text-earth/70 text-[0.95rem] leading-relaxed max-w-xl mb-6">
           {ta.intro}
         </p>
+
+        {/* Processionary warning — clickable card linking to dedicated page */}
+        <Link
+          href="/processionary"
+          className="block mb-8 group rounded-2xl overflow-hidden bg-night relative border border-red-500/40 hover:border-red-500/70 transition-all shadow-card hover:shadow-float"
+        >
+          <div className="grid sm:grid-cols-[180px_1fr]">
+            <div className="relative aspect-square sm:aspect-auto sm:h-full bg-night overflow-hidden">
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BLOB_URL}/processionary/3d.png`}
+                alt={ta.processionaryAlert.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-6 sm:p-7 flex flex-col justify-center">
+              <span className="font-mono text-[0.65rem] tracking-[0.25em] uppercase text-red-400 mb-2 inline-flex items-center gap-1.5">
+                ⚠ {ta.processionaryAlert.kicker}
+              </span>
+              <h3 className="font-display text-xl sm:text-2xl text-cream tracking-tight mb-2">
+                {ta.processionaryAlert.title}
+              </h3>
+              <p className="font-sans text-cream/70 text-[0.85rem] leading-relaxed mb-3">
+                {ta.processionaryAlert.text}
+              </p>
+              <span className="font-sans text-[0.8rem] text-red-400 group-hover:text-red-300 transition-colors inline-flex items-center gap-1.5">
+                {ta.processionaryAlert.cta}
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  className="transition-transform group-hover:translate-x-0.5"
+                >
+                  <path
+                    d="M2 6h8M7 3l3 3-3 3"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </Link>
 
         {/* Pro tip link */}
         <button

@@ -63,6 +63,12 @@ export const translations = {
       sectionLabel: 'Section 02',
       title: 'Araki',
       intro: "Araki is part of the deal and we know you love him. Here's everything you need to know.",
+      processionaryAlert: {
+        kicker: 'Important warning',
+        title: 'Pine processionary caterpillars',
+        text: 'Dangerous caterpillars active January–May. Please read before walking Araki.',
+        cta: 'Read the warning',
+      },
       stuff: {
         title: 'Thank you',
         emoji: '❤️',
@@ -82,6 +88,48 @@ export const translations = {
         title: 'At night',
         emoji: '🌙',
         text: 'Araki might come during the night and ask to sleep with you — don\'t let him! Tell him "dobranoc" or "na miejsce" and he\'ll go back to his spot.',
+      },
+    },
+    processionary: {
+      title: 'Pine processionary',
+      intro: 'A dangerous caterpillar. Read this before walking Araki between January and May.',
+      back: '← Back to the guide',
+      warning: {
+        title: 'Important warning',
+        text: 'Pine processionary caterpillars are extremely dangerous to dogs. Their microscopic hairs cause severe burns, swelling and possible tongue necrosis. This is a real veterinary emergency.',
+      },
+      season: {
+        title: 'When',
+        text: 'On the Mediterranean coast the caterpillars descend from pines between January and May, with peak risk February to April. They travel nose-to-tail in long processions on the ground — Araki will be very curious. Do not let him near them, even after they look dead.',
+      },
+      identify: {
+        title: 'What they look like',
+        text: 'Up to 4 cm long, brown-black with reddish patches and a yellow underside, very hairy. They move in single-file processions of dozens of individuals. A solitary hairy caterpillar is probably not one of them — they live in groups, in silky nests at the tip of pine branches.',
+        caption: 'Pine processionary caterpillars in procession.',
+      },
+      dangerForDog: {
+        title: 'Risk for Araki',
+        text: 'Symptoms appear within 2 hours of contact: sudden heavy drooling, vomiting, face scratching, very painful swelling of the tongue and lips. Without rapid treatment the tongue can turn black within 24–48 h with possible necrosis (partial amputation may be required). Inhaled hairs can cause respiratory distress and shock.',
+        symptomsCaption: 'Typical symptoms.',
+        dogCaption: 'Affected dog — heavy salivation, swollen tongue.',
+      },
+      whatToDo: {
+        title: 'What to do — emergency',
+        intro: 'If Araki has been in contact with one, every minute counts:',
+        steps: [
+          'Put on gloves before touching his mouth (the hairs sting you too).',
+          'Rinse his mouth abundantly with cold water or saline for 10 to 15 minutes. Carefully remove hairs from eyes, nose, mouth — do not rub.',
+          'Call a vet immediately — this is a true emergency. The vet may need to hospitalise him.',
+        ],
+      },
+      prevention: {
+        title: 'Prevention',
+        text: 'If you spot a procession on the ground or a silky cocoon-like nest in a pine tree above, keep Araki on a short leash and change your walking route. Traps placed around pine trunks (pictured) are a sign that processionaries are active nearby.',
+        caption: 'Pine trunk trap — sign of an active area.',
+      },
+      contacts: {
+        title: 'Emergency numbers',
+        text: 'Severe skin reaction on yourself: poison control center or doctor. Breathing difficulty (you or Araki): call 15 or 112 without delay.',
       },
     },
     around: {
@@ -213,6 +261,12 @@ export const translations = {
       sectionLabel: 'Sekcja 02',
       title: 'Araki',
       intro: 'To jest Araki — nasz pies. Jest częścią pakietu i wiemy, że go pokochacie. Tu znajdziecie wszystko, co musicie wiedzieć.',
+      processionaryAlert: {
+        kicker: 'Ważne ostrzeżenie',
+        title: 'Procesjonarka sosnowa',
+        text: 'Niebezpieczne gąsienice aktywne od stycznia do maja. Przeczytajcie zanim wyjdziecie z Arakim.',
+        cta: 'Przeczytaj ostrzeżenie',
+      },
       stuff: {
         title: 'Dziękujemy',
         emoji: '🐾',
@@ -232,6 +286,48 @@ export const translations = {
         title: 'W nocy',
         emoji: '🌙',
         text: 'Araki może przyjść w nocy i chcieć spać z wami — nie pozwalajcie mu! Powiedzcie mu „dobranoc" albo „na miejsce" i wróci na swoje miejsce.',
+      },
+    },
+    processionary: {
+      title: 'Procesjonarka sosnowa',
+      intro: 'Niebezpieczna gąsienica. Przeczytajcie to zanim wyjdziecie z Arakim między styczniem a majem.',
+      back: '← Wróć do przewodnika',
+      warning: {
+        title: 'Ważne ostrzeżenie',
+        text: 'Gąsienice procesjonarki sosnowej są bardzo niebezpieczne dla psów. Ich mikroskopijne włoski powodują poważne oparzenia, opuchliznę i mogą prowadzić do martwicy języka. To prawdziwy nagły wypadek weterynaryjny.',
+      },
+      season: {
+        title: 'Kiedy',
+        text: 'Na Wybrzeżu Lazurowym gąsienice schodzą z sosen od stycznia do maja, ze szczytem ryzyka od lutego do kwietnia. Idą jedna za drugą w długich procesjach po ziemi — Araki będzie bardzo ciekawy. Nie pozwalajcie mu się do nich zbliżać, nawet jeśli wyglądają na martwe.',
+      },
+      identify: {
+        title: 'Jak wyglądają',
+        text: 'Do 4 cm długości, brązowoczarne z rdzawymi plamami i żółtym spodem, bardzo włochate. Poruszają się w pojedynczych procesjach kilkudziesięciu osobników. Pojedyncza włochata gąsienica raczej nią nie jest — żyją w grupach, w jedwabnych gniazdach na końcach gałęzi sosen.',
+        caption: 'Gąsienice procesjonarki w procesji.',
+      },
+      dangerForDog: {
+        title: 'Ryzyko dla Arakiego',
+        text: 'Objawy pojawiają się w ciągu 2 godzin od kontaktu: nagłe obfite ślinienie, wymioty, drapanie pyska, bardzo bolesna opuchlizna języka i warg. Bez szybkiego leczenia język może sczernieć w ciągu 24–48 h z możliwą martwicą (może być konieczna częściowa amputacja). Wdychanie włosków może powodować trudności z oddychaniem i wstrząs.',
+        symptomsCaption: 'Typowe objawy.',
+        dogCaption: 'Chory pies — obfite ślinienie, opuchnięty język.',
+      },
+      whatToDo: {
+        title: 'Co robić — nagły wypadek',
+        intro: 'Jeśli Araki miał kontakt z gąsienicą, liczy się każda minuta:',
+        steps: [
+          'Załóżcie rękawiczki, zanim dotkniecie jego pyska (włoski parzą też was).',
+          'Przepłuczcie obficie pysk zimną wodą lub solą fizjologiczną przez 10–15 minut. Ostrożnie usuńcie włoski z oczu, nosa, pyska — nie pocierajcie.',
+          'Natychmiast zadzwońcie do weterynarza — to prawdziwy nagły wypadek. Weterynarz może być zmuszony go hospitalizować.',
+        ],
+      },
+      prevention: {
+        title: 'Profilaktyka',
+        text: 'Jeśli zobaczycie procesję na ziemi albo jedwabne gniazdo na sośnie powyżej, trzymajcie Arakiego na krótkiej smyczy i zmieńcie trasę spaceru. Pułapki założone wokół pni sosen (na zdjęciu) są oznaką, że procesjonarki są aktywne w okolicy.',
+        caption: 'Pułapka na pniu sosny — znak aktywności w okolicy.',
+      },
+      contacts: {
+        title: 'Numery alarmowe',
+        text: 'Silna reakcja skórna u was: centrum kontroli zatruć lub lekarz. Trudności z oddychaniem (u was lub Arakiego): natychmiast zadzwońcie pod 15 lub 112.',
       },
     },
     around: {
