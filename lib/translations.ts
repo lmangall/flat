@@ -113,6 +113,30 @@ export const translations = {
         symptomsCaption: 'Typical symptoms.',
         dogCaption: 'Affected dog — heavy salivation, swollen tongue.',
       },
+      dangerForHuman: {
+        title: 'Risk for you too',
+        intro: 'Animals are more often affected, but the hairs are also harmful to humans. The toxin (histamine) attaches easily to skin, mucous membranes and clothing. Repeated exposures can trigger allergic reactions that worsen each time. The hairs remain urticant for several months after the caterpillars are gone — abandoned nests are still dangerous.',
+        skin: {
+          title: 'Skin contact',
+          text: 'Within 1–12 h: painful rash, intense itching, possible swelling of the face (mouth, eyelids). The hairs spread via sweat, scratching, rubbing or clothing. Symptoms can last 10–18 days.',
+        },
+        eyes: {
+          title: 'Eye contact',
+          text: 'Within 1–4 h: conjunctivitis (red, painful, watery eyes), possibly corneal lesion (keratitis). Symptoms last 2–15 days; if hairs cross the cornea, irritation can persist for years.',
+        },
+        breathing: {
+          title: 'Inhalation',
+          text: 'Hairs irritate the airways: sneezing, sore throat, difficulty swallowing, sometimes respiratory distress (pharyngeal or laryngeal edema).',
+        },
+        ingestion: {
+          title: 'Ingestion',
+          text: 'Inflammation of the mouth and intestinal lining: hypersalivation, vomiting, abdominal pain.',
+        },
+        severe: {
+          title: 'Severe reactions',
+          text: 'In rare cases, anaphylactic shock can occur — call 15 or 112 immediately, this is a life-threatening emergency. If you carry an adrenaline auto-injector (EpiPen) for another allergy, use it.',
+        },
+      },
       whatToDo: {
         title: 'What to do — emergency',
         intro: 'If Araki has been in contact with one, every minute counts:',
@@ -310,6 +334,30 @@ export const translations = {
         text: 'Objawy pojawiają się w ciągu 2 godzin od kontaktu: nagłe obfite ślinienie, wymioty, drapanie pyska, bardzo bolesna opuchlizna języka i warg. Bez szybkiego leczenia język może sczernieć w ciągu 24–48 h z możliwą martwicą (może być konieczna częściowa amputacja). Wdychanie włosków może powodować trudności z oddychaniem i wstrząs.',
         symptomsCaption: 'Typowe objawy.',
         dogCaption: 'Chory pies — obfite ślinienie, opuchnięty język.',
+      },
+      dangerForHuman: {
+        title: 'Ryzyko też dla was',
+        intro: 'Zwierzęta są częściej narażone, ale włoski są również szkodliwe dla ludzi. Toksyna (histamina) łatwo przylepia się do skóry, błon śluzowych i ubrań. Powtarzające się kontakty mogą wywołać reakcje alergiczne, które za każdym razem się nasilają. Włoski pozostają parzące przez kilka miesięcy po odejściu gąsienic — opuszczone gniazda nadal są niebezpieczne.',
+        skin: {
+          title: 'Kontakt ze skórą',
+          text: 'W ciągu 1–12 h: bolesna wysypka, silny świąd, możliwy obrzęk twarzy (usta, powieki). Włoski rozprzestrzeniają się przez pot, drapanie, pocieranie i ubrania. Objawy mogą trwać 10–18 dni.',
+        },
+        eyes: {
+          title: 'Kontakt z oczami',
+          text: 'W ciągu 1–4 h: zapalenie spojówek (czerwone, bolesne, łzawiące oczy), możliwe uszkodzenie rogówki (zapalenie rogówki). Objawy trwają 2–15 dni; jeśli włoski przejdą przez rogówkę, podrażnienie może utrzymywać się latami.',
+        },
+        breathing: {
+          title: 'Wdychanie',
+          text: 'Włoski drażnią drogi oddechowe: kichanie, ból gardła, trudności z przełykaniem, czasami trudności z oddychaniem (obrzęk gardła lub krtani).',
+        },
+        ingestion: {
+          title: 'Połknięcie',
+          text: 'Zapalenie błony śluzowej jamy ustnej i jelit: nadmierne ślinienie, wymioty, bóle brzucha.',
+        },
+        severe: {
+          title: 'Ciężkie reakcje',
+          text: 'W rzadkich przypadkach może wystąpić wstrząs anafilaktyczny — natychmiast zadzwońcie pod 15 lub 112, to zagrożenie życia. Jeśli macie autoiniektor adrenaliny (EpiPen) z powodu innej alergii, użyjcie go.',
+        },
       },
       whatToDo: {
         title: 'Co robić — nagły wypadek',

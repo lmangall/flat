@@ -125,6 +125,44 @@ export default function ProcessionaryPage() {
 					</div>
 				</section>
 
+				{/* Danger for humans */}
+				<section className="mb-14">
+					<h2 className="font-display text-2xl text-night tracking-tight mb-4">
+						{tp.dangerForHuman.title}
+					</h2>
+					<p className="font-sans text-earth/75 leading-relaxed mb-6">
+						{tp.dangerForHuman.intro}
+					</p>
+					<div className="grid sm:grid-cols-2 gap-4 mb-6">
+						{[
+							tp.dangerForHuman.skin,
+							tp.dangerForHuman.eyes,
+							tp.dangerForHuman.breathing,
+							tp.dangerForHuman.ingestion,
+						].map((item, i) => (
+							<div
+								key={i}
+								className="bg-cream rounded-xl p-5 border border-stone/30 shadow-subtle"
+							>
+								<h3 className="font-display text-base text-night tracking-tight mb-2">
+									{item.title}
+								</h3>
+								<p className="font-sans text-earth/75 text-[0.85rem] leading-relaxed">
+									{item.text}
+								</p>
+							</div>
+						))}
+					</div>
+					<div className="bg-red-50 border-l-4 border-red-600 rounded-r-xl p-5">
+						<h3 className="font-display text-base text-night tracking-tight mb-2">
+							{tp.dangerForHuman.severe.title}
+						</h3>
+						<p className="font-sans text-earth/85 text-[0.9rem] leading-relaxed">
+							{tp.dangerForHuman.severe.text}
+						</p>
+					</div>
+				</section>
+
 				{/* What to do */}
 				<section className="mb-14 bg-cream rounded-2xl p-7 sm:p-9 border border-stone/30 shadow-card">
 					<h2 className="font-display text-2xl text-night tracking-tight mb-4">
