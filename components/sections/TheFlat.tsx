@@ -259,17 +259,17 @@ export default function TheFlat() {
                   {tf.humidity.title}
                 </h3>
                 <p className="font-sans text-earth/70 leading-relaxed text-[0.85rem]">
-                  It&apos;s really important to open the windows regularly —{' '}
+                  {tf.humidity.textBefore}
                   <a
                     href="https://www.tiktok.com/@liamcarps/video/7325103756696210721"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline decoration-dotted decoration-earth/30 hover:decoration-earth/60 transition-colors"
-                    title="Leo knows a thing or two about ventilation from his Berlin days"
+                    title={tf.humidity.linkTitle}
                   >
-                    especially upstairs
+                    {tf.humidity.linkText}
                   </a>
-                  , where humidity builds up fast. Same story in the bathroom: we usually leave the towels outside to dry rather than keeping them in there.
+                  {tf.humidity.textAfter}
                 </p>
               </div>
             </div>
@@ -285,6 +285,34 @@ export default function TheFlat() {
                 <p className="font-sans text-earth/70 leading-relaxed text-[0.85rem]">
                   {tf.oven.text}
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-6 border-b border-stone/30">
+            <div className="flex items-start gap-4">
+              <span className="text-2xl mt-0.5">{tf.table.emoji}</span>
+              <div className="min-w-0">
+                <h3 className="font-display text-xl text-night mb-2 tracking-tight">
+                  {tf.table.title}
+                </h3>
+                <p className="font-sans text-earth/70 leading-relaxed text-[0.85rem]">
+                  {tf.table.text}
+                </p>
+                <figure className="mt-4 max-w-[15rem]">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-stone/40 shadow-card">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_BLOB_URL}/flat/table-protectors.jpg`}
+                      alt={tf.table.caption}
+                      fill
+                      sizes="240px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="font-sans text-earth/50 text-[0.7rem] mt-1.5">
+                    {tf.table.caption}
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>

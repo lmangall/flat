@@ -8,6 +8,7 @@ const files = [
 	'pink-sofa-and-rug.jpg',
 	'yellow-shelves.jpg',
 	'wooden-beam-mimosa.jpg',
+	'table-protectors.jpg',
 ];
 
 const contentType = 'image/jpeg';

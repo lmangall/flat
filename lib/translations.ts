@@ -22,7 +22,11 @@ export const translations = {
       humidity: {
         title: 'Open the windows',
         emoji: '🪟',
-        text: "It's really important to open the windows regularly — especially upstairs, where humidity builds up fast. Same story in the bathroom: we usually leave the towels outside to dry rather than keeping them in there.",
+        textBefore: "It's really important to open the windows regularly — ",
+        linkText: 'especially upstairs',
+        linkTitle: 'Leo knows a thing or two about ventilation from his Berlin days',
+        textAfter:
+          ', where humidity builds up fast. Same story in the bathroom: we usually leave the towels outside to dry rather than keeping them in there.',
       },
       location: {
         title: 'Location',
@@ -35,9 +39,15 @@ export const translations = {
         text: "Bedsheets, towels, hairdryer, and a fully equipped kitchen are all here (no dishwasher). Bathroom has a bathtub; toilet is separate. Fast internet. No elevator — it's a 4th-floor walkup in a classic old town building. The upper part under the roof has very low ceilings — watch your head (we really mean it). The stairs can be slippery with socks, so be careful going up and down.",
       },
       oven: {
-        title: 'Oven light',
-        emoji: '💡',
-        text: "Quick heads up: the oven light doesn't switch off on its own. Please remember to turn it off after using the oven so it doesn't stay on.",
+        title: "Don't leave the oven on",
+        emoji: '⚠️',
+        text: "Quick heads up: the oven light doesn't work. Please remember to turn it off after using the oven so it doesn't stay on.",
+      },
+      table: {
+        title: 'Use the table protectors',
+        emoji: '⚠️',
+        text: 'The yellow table marks easily — please always put the woven protectors down before setting plates, glasses or anything hot on it. They live on the table, so just slide them into place.',
+        caption: 'The woven protectors, ready on the table.',
       },
       gallery: {
         title: 'Photos',
@@ -46,9 +56,7 @@ export const translations = {
           { src: `${blob}/flat/side-window-view.jpeg`, caption: 'Side window view' },
           { src: `${blob}/flat/araki-sunbathing.jpeg`, caption: 'Araki taking the sun (not allowed on the seat)' },
           { src: `${blob}/flat/araki-on-rug.jpg`, caption: 'Araki on the rug' },
-          { src: `${blob}/flat/pink-sofa-and-rug.jpg`, caption: 'Pink sofa and rug' },
           { src: `${blob}/flat/living-room.jpg`, caption: 'Living room' },
-          { src: `${blob}/flat/yellow-shelves.jpg`, caption: 'Yellow shelves' },
           { src: `${blob}/flat/wooden-beam-mimosa.jpg`, caption: 'Wooden beam with mimosa' },
           { src: `${blob}/flat/les-remparts.jpeg`, caption: 'Les remparts' },
           { src: `${blob}/flat/room-view.jpeg`, caption: 'Room view' },
@@ -66,8 +74,13 @@ export const translations = {
       processionaryAlert: {
         kicker: 'Important warning',
         title: 'Pine processionary caterpillars',
-        text: 'Dangerous caterpillars active January–May. Please read before walking Araki.',
+        text: 'Dangerous caterpillars. Please read this before walking Araki.',
         cta: 'Read the warning',
+        season: {
+          range: 'January–May',
+          active: 'In season now',
+          dormant: 'Currently out of season',
+        },
       },
       stuff: {
         title: 'Thank you',
@@ -77,7 +90,7 @@ export const translations = {
       food: {
         title: 'Feeding',
         emoji: '🍽️',
-        text: "He has to be sitting at his place while you prepare his food. Give him one dose and a little bit of his kibble (about 1.25 doses total), plus the green powder on top.",
+        text: "Give him one dose and a little bit of his kibble (about 1.5 doses total), plus the green powder on top.",
       },
       walks: {
         title: 'Walks',
@@ -244,7 +257,11 @@ export const translations = {
       humidity: {
         title: 'Otwierajcie okna',
         emoji: '🪟',
-        text: 'Naprawdę ważne, żeby regularnie otwierać okna — szczególnie na górze, gdzie wilgoć zbiera się bardzo szybko. Tak samo w łazience: zwykle zostawiamy ręczniki na zewnątrz do schnięcia, zamiast trzymać je w środku.',
+        textBefore: 'Naprawdę ważne, żeby regularnie otwierać okna — ',
+        linkText: 'szczególnie na górze',
+        linkTitle: 'Leo wie co nieco o wietrzeniu ze swoich berlińskich czasów',
+        textAfter:
+          ', gdzie wilgoć zbiera się bardzo szybko. Tak samo w łazience: zwykle zostawiamy ręczniki na zewnątrz do schnięcia, zamiast trzymać je w środku.',
       },
       location: {
         title: 'Lokalizacja',
@@ -257,9 +274,15 @@ export const translations = {
         text: 'Pościel, ręczniki, suszarka i w pełni wyposażona kuchnia (bez zmywarki). Łazienka z wanną; toaleta osobno. Szybki internet. Bez windy — 4. piętro w klasycznym budynku starego miasta. Górna część pod dachem ma bardzo niskie sufity — uważaj na głowę (naprawdę bardzo). Schody mogą być śliskie w skarpetkach, więc ostrożnie przy wchodzeniu i schodzeniu.',
       },
       oven: {
-        title: 'Lampka piekarnika',
-        emoji: '💡',
-        text: 'Mała uwaga: lampka piekarnika nie gaśnie sama. Pamiętajcie wyłączyć ją po użyciu piekarnika, żeby nie świeciła cały czas.',
+        title: 'Nie zostawiajcie włączonego piekarnika',
+        emoji: '⚠️',
+        text: 'Mała uwaga: lampka piekarnika nie działa. Pamiętajcie wyłączyć piekarnik po użyciu, żeby nie pozostał włączony.',
+      },
+      table: {
+        title: 'Używajcie mat ochronnych',
+        emoji: '⚠️',
+        text: 'Żółty stół łatwo się niszczy — zawsze kładźcie plecione maty, zanim postawicie na nim talerze, szklanki albo coś gorącego. Leżą na stole, więc wystarczy je przesunąć na miejsce.',
+        caption: 'Plecione maty, gotowe na stole.',
       },
       gallery: {
         title: 'Zdjęcia',
@@ -268,9 +291,7 @@ export const translations = {
           { src: `${blob}/flat/side-window-view.jpeg`, caption: 'Widok z bocznego okna' },
           { src: `${blob}/flat/araki-sunbathing.jpeg`, caption: 'Araki na słońcu (nie wolno mu na fotel)' },
           { src: `${blob}/flat/araki-on-rug.jpg`, caption: 'Araki na dywanie' },
-          { src: `${blob}/flat/pink-sofa-and-rug.jpg`, caption: 'Różowa sofa i dywan' },
           { src: `${blob}/flat/living-room.jpg`, caption: 'Salon' },
-          { src: `${blob}/flat/yellow-shelves.jpg`, caption: 'Żółte półki' },
           { src: `${blob}/flat/wooden-beam-mimosa.jpg`, caption: 'Drewniana belka z mimozą' },
           { src: `${blob}/flat/les-remparts.jpeg`, caption: 'Mury obronne' },
           { src: `${blob}/flat/room-view.jpeg`, caption: 'Widok pokoju' },
@@ -288,8 +309,13 @@ export const translations = {
       processionaryAlert: {
         kicker: 'Ważne ostrzeżenie',
         title: 'Procesjonarka sosnowa',
-        text: 'Niebezpieczne gąsienice aktywne od stycznia do maja. Przeczytajcie zanim wyjdziecie z Arakim.',
+        text: 'Niebezpieczne gąsienice. Przeczytajcie to, zanim wyjdziecie z Arakim.',
         cta: 'Przeczytaj ostrzeżenie',
+        season: {
+          range: 'Styczeń–maj',
+          active: 'Sezon trwa',
+          dormant: 'Obecnie poza sezonem',
+        },
       },
       stuff: {
         title: 'Dziękujemy',
@@ -299,7 +325,7 @@ export const translations = {
       food: {
         title: 'Karmienie',
         emoji: '🍽️',
-        text: 'Musi siedzieć na swoim miejscu, kiedy przygotowujecie mu jedzenie. Dawajcie mu jedną porcję i trochę karmy (około 1,25 porcji w sumie) plus zielony proszek na wierzch.',
+        text: 'Dawajcie mu jedną porcję i trochę karmy (około 1,5 porcji w sumie) plus zielony proszek na wierzch.',
       },
       walks: {
         title: 'Spacery',

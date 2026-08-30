@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
@@ -8,6 +8,7 @@ import { useLang } from '@/components/LanguageProvider'
 import { translations } from '@/lib/translations'
 import DotFadeBox from '@/components/DotFadeBox'
 import DotHeart from '@/components/DotHeart'
+import { isProcessionarySeason } from '@/lib/season'
 
 const SunArc = dynamic(() => import('@/components/SunArc'), { ssr: false })
 
@@ -18,6 +19,11 @@ export default function Araki() {
   const ta = t.araki
   const [showSun, setShowSun] = useState(false)
   const [heartScatter, setHeartScatter] = useState(0)
+  // Start alert-red so a warning is never dimmed by a stale server render; the
+  // client settles it into the dormant look after mount if we're off-season.
+  const [inSeason, setInSeason] = useState(true)
+
+  useEffect(() => setInSeason(isProcessionarySeason()), [])
 
   const openSun = useCallback(() => setShowSun(true), [])
   const closeSun = useCallback(() => setShowSun(false), [])
@@ -193,7 +199,11 @@ export default function Araki() {
         {/* Processionary warning — clickable card linking to dedicated page */}
         <Link
           href="/processionary"
-          className="block mt-10 max-w-2xl group rounded-xl overflow-hidden bg-night relative border border-red-500/40 hover:border-red-500/70 transition-all shadow-card hover:shadow-float"
+          className={`block mt-10 max-w-2xl group rounded-xl overflow-hidden bg-night relative border shadow-card hover:shadow-float transition-all duration-700 ${
+            inSeason
+              ? 'border-red-500/40 hover:border-red-500/70'
+              : 'border-cream/15 hover:border-cream/30'
+          }`}
         >
           <div className="grid sm:grid-cols-[140px_1fr]">
             <div className="relative aspect-[4/3] sm:aspect-auto sm:h-full bg-night flex items-center justify-center p-2">
@@ -201,20 +211,62 @@ export default function Araki() {
                 src={`${process.env.NEXT_PUBLIC_BLOB_URL}/processionary/3d.png`}
                 alt={ta.processionaryAlert.title}
                 fill
-                className="object-contain transition-transform duration-700 group-hover:scale-[1.04]"
+                className={`object-contain transition-all duration-700 group-hover:scale-[1.04] ${
+                  inSeason
+                    ? ''
+                    : 'opacity-35 saturate-0 group-hover:opacity-80 group-hover:saturate-100'
+                }`}
               />
             </div>
             <div className="p-4 sm:p-5 flex flex-col justify-center">
-              <span className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-red-400 mb-1.5 inline-flex items-center gap-1.5">
+              <span
+                className={`font-mono text-[0.6rem] tracking-[0.25em] uppercase mb-1.5 inline-flex items-center gap-1.5 transition-colors duration-700 ${
+                  inSeason ? 'text-red-400' : 'text-cream/30 group-hover:text-cream/50'
+                }`}
+              >
                 ⚠ {ta.processionaryAlert.kicker}
               </span>
-              <h3 className="font-display text-base sm:text-lg text-cream tracking-tight mb-1.5">
+              <h3
+                className={`font-display text-base sm:text-lg tracking-tight mb-1.5 transition-colors duration-700 ${
+                  inSeason ? 'text-cream' : 'text-cream/50 group-hover:text-cream/85'
+                }`}
+              >
                 {ta.processionaryAlert.title}
               </h3>
-              <p className="font-sans text-cream/70 text-[0.78rem] leading-relaxed mb-2">
+              <span
+                className={`self-start inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 mb-2 font-mono text-[0.58rem] tracking-[0.12em] uppercase transition-colors duration-700 ${
+                  inSeason
+                    ? 'border-red-500/40 bg-red-500/10 text-red-300'
+                    : 'border-cream/30 bg-cream/10 text-cream'
+                }`}
+              >
+                <span
+                  className={`h-1.5 w-1.5 rounded-full transition-colors duration-700 ${
+                    inSeason ? 'bg-red-400 animate-pulse' : 'bg-cream/70'
+                  }`}
+                />
+                {ta.processionaryAlert.season.range}
+                <span aria-hidden className="opacity-40">
+                  ·
+                </span>
+                {inSeason
+                  ? ta.processionaryAlert.season.active
+                  : ta.processionaryAlert.season.dormant}
+              </span>
+              <p
+                className={`font-sans text-[0.78rem] leading-relaxed mb-2 transition-colors duration-700 ${
+                  inSeason ? 'text-cream/70' : 'text-cream/35 group-hover:text-cream/65'
+                }`}
+              >
                 {ta.processionaryAlert.text}
               </p>
-              <span className="font-sans text-[0.72rem] text-red-400 group-hover:text-red-300 transition-colors inline-flex items-center gap-1.5">
+              <span
+                className={`font-sans text-[0.72rem] transition-colors duration-700 inline-flex items-center gap-1.5 ${
+                  inSeason
+                    ? 'text-red-400 group-hover:text-red-300'
+                    : 'text-cream/40 group-hover:text-cream/75'
+                }`}
+              >
                 {ta.processionaryAlert.cta}
                 <svg
                   width="11"
