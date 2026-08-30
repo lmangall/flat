@@ -279,10 +279,10 @@ export const translations = {
         text: 'Mała uwaga: lampka piekarnika nie działa. Pamiętajcie wyłączyć piekarnik po użyciu, żeby nie pozostał włączony.',
       },
       table: {
-        title: 'Używajcie mat ochronnych',
+        title: 'Zawsze na podkładkach',
         emoji: '⚠️',
-        text: 'Żółty stół łatwo się niszczy — zawsze kładźcie plecione maty, zanim postawicie na nim talerze, szklanki albo coś gorącego. Leżą na stole, więc wystarczy je przesunąć na miejsce.',
-        caption: 'Plecione maty, gotowe na stole.',
+        text: 'Żółty stół łatwo się rysuje i nie lubi gorąca. Plecione podkładki leżą na blacie — proszę, zawsze stawiajcie na nich talerze, szklanki i garnki.',
+        caption: 'Plecione podkładki, gotowe na stole.',
       },
       gallery: {
         title: 'Zdjęcia',
