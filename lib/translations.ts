@@ -172,15 +172,27 @@ export const translations = {
     around: {
       sectionLabel: 'Section 03',
       title: 'Getting Around',
-      airport: {
-        title: 'From the airport',
+      arrival: {
+        title: 'Getting here from the airport',
         emoji: '✈️',
+        before: {
+          label: 'Before you fly',
+          text: "Download SNCF Connect and set up your account at home. It's the app for train tickets, and it isn't the easiest thing to figure out the first time.",
+          links: [
+            { label: 'App Store', url: 'https://apps.apple.com/fr/app/sncf-connect-trains-trajets/id343889987' },
+            { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.vsct.vsc.mobile.horaireetresa.android' },
+          ],
+        },
         steps: [
-          'Exit the terminal and board the free tram.',
-          'If you land on T2 — take 1 stop to T1 and walk to the train station, OR 2 stops to "Railroad Station" and walk back.',
-          '(Make sure the tram you board goes through "Railroad Station".)',
-          "Don't lose time: buy your train ticket while still on the tram!",
+          "You'll most likely land at Terminal 2. Just outside, hop on the tram — it's free.",
+          'Get off at Terminal 1 (first stop) and walk to the train station, 5–10 minutes — or stay on to the Nice Saint-Augustin stop (second stop), which leaves you right at the station.',
+          "Buy your train ticket while you're still on the tram. There are machines at the station, but they're not obvious to use and there's often a queue.",
+          "⚠️ Check you're on the right platform before boarding — the two directions leave from opposite sides, and the numbering and letters aren't always obvious.",
+          'Take the first train towards Grasse, Cannes or Marseille, and get off at Antibes.',
+          `From Antibes station it's a short walk to ${process.env.NEXT_PUBLIC_ADDRESS_SHORT ?? 'the flat'}.`,
         ],
+        frequency: 'Trams and trains both run often, so there\'s nothing to plan around — just take the next one.',
+        back: 'Going back is the same trip in reverse: train to Nice Saint-Augustin, then the free tram to your terminal.',
       },
       trains: {
         title: 'Trains',
@@ -407,15 +419,27 @@ export const translations = {
     around: {
       sectionLabel: 'Sekcja 03',
       title: 'Jak się poruszać',
-      airport: {
-        title: 'Z lotniska',
+      arrival: {
+        title: 'Jak do nas dojechać z lotniska',
         emoji: '✈️',
+        before: {
+          label: 'Zanim wylecicie',
+          text: 'Pobierzcie aplikację SNCF Connect i załóżcie konto jeszcze w domu. To przez nią kupuje się bilety kolejowe, a za pierwszym razem nie jest specjalnie intuicyjna.',
+          links: [
+            { label: 'App Store', url: 'https://apps.apple.com/fr/app/sncf-connect-trains-trajets/id343889987' },
+            { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.vsct.vsc.mobile.horaireetresa.android' },
+          ],
+        },
         steps: [
-          'Wyjdźcie z terminalu i wsiądźcie w darmowy tramwaj.',
-          'Jeśli lądujecie na T2 — jedźcie 1 przystanek do T1 i idźcie piechotą na dworzec LUB 2 przystanki do "Railroad Station" i zawróćcie.',
-          '(Upewnijcie się, że tramwaj jedzie przez "Railroad Station".)',
-          'Nie traćcie czasu: kupcie bilet kolejowy jeszcze w tramwaju!',
+          'Najprawdopodobniej wylądujecie na Terminalu 2. Zaraz przed wyjściem wsiądźcie w tramwaj — jest bezpłatny.',
+          'Wysiądźcie na Terminalu 1 (pierwszy przystanek) i przejdźcie na dworzec, 5–10 minut — albo jedźcie do przystanku Nice Saint-Augustin (drugi przystanek), który wysadza was pod samym dworcem.',
+          'Bilet na pociąg kupcie jeszcze w tramwaju. Na dworcu są automaty, ale ich obsługa nie jest oczywista i często stoi do nich kolejka.',
+          '⚠️ Zanim wsiądziecie, sprawdźcie, czy stoicie na właściwym peronie — pociągi w obie strony odjeżdżają z przeciwnych stron, a numery i litery nie zawsze są oczywiste.',
+          'Wsiądźcie w pierwszy pociąg w kierunku Grasse, Cannes lub Marsylii i wysiądźcie w Antibes.',
+          `Z dworca w Antibes do ${process.env.NEXT_PUBLIC_ADDRESS_SHORT ?? 'mieszkania'} jest kilka minut piechotą.`,
         ],
+        frequency: 'Tramwaje i pociągi jeżdżą często, więc nie musicie planować pod rozkład — po prostu wsiądźcie w najbliższy.',
+        back: 'Powrót na lotnisko to ta sama trasa w drugą stronę: pociąg do Nice Saint-Augustin, a potem darmowy tramwaj do waszego terminalu.',
       },
       trains: {
         title: 'Pociągi',
